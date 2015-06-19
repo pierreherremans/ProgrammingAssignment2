@@ -2,7 +2,7 @@
 ## Matrix inversion is usually a costly computation and there may
 ## be some benefit to caching the inverse of a matrix rather than
 ## compute it repeatedly.
-## Usage example:
+## Usage example (inspired by the solve {base} R Documentation):
 ## hilbert <- function(n) { i <- 1:n; 1 / outer(i - 1, i, "+") }
 ## h8 <- hilbert(8);
 ## m <- makeCacheMatrix(h8)
